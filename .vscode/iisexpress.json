@@ -1,5 +1,5 @@
 {
-  "port": 2194,
+  "port": 42283,
   "path": "w:\\synchr\\itstep\\курсова\\asp_net\\santexnik",
   "clr": "v4.0",
   "protocol": "http"

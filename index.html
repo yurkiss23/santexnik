@@ -13,29 +13,137 @@
 <body>
     <div id="head-menu"></div>
 
+    <!-- QUICK CALL -->
     <div class="container">
-        <div id="indexCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F8C9/production/_106398636_mediaitem106398635.jpg" alt="" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F8C9/production/_106398636_mediaitem106398635.jpg" alt="" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F8C9/production/_106398636_mediaitem106398635.jpg" alt="" class="d-block w-100">
+        <div class="row mb-2 justify-content-center">
+            <div class="col-auto">
+                <div class="card shadow-sm mt-3 h-md-550 flex-auto d-block d-sm-none">
+                    <canvas id="canvasTrouble"></canvas>
+                    <button id="shot" class="btn btn-outline-default btn-block">
+                        <img src="https://www.supplyforce.com/ASSETS/WEB_THEMES//ECOMMERCE_STD_TEMPLATE_V2/images/NoImage.png" alt="" id="shot">
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h1>Хелоу, сантехнік!</h1>
+    <!-- CAROUSEL -->
+    <div class="container-fluid d-none d-sm-block">
+        <div id="indexCarousel" class="carousel slide d-flex" data-ride="carousel">
+            <div class="carousel-inner mt-3 mb-3 h-sm-100" style="height: 250px">
+                <div class="carousel-item active">
+                    <img src="http://insanthouse.com.ua/image/cache/data/1450983122_fotolia_36146315_m-1200x450-300x200.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://20.ua/ru/media-resize/company_show_new/vintek-santehnika-i-otoplenie-63251.jpeg?timestamp=1500409519" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.ua.prom.st/121353552_inzhenernaya-santehnika-po.jpg" alt="" class="d-block w-100">
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h1>Хелоу, сантехнік!</h1>
+        </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="container">
+        <div class="row" id="columns">
+            <div id="services" class="col-md-9">
+                <div>
+                    <h2>Послуги</h2>
+                </div>
+                <div class="row mb-2 justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 h-md-250 d-none d-sm-block">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block text-primary mb-2">One</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 align-items-start d-none d-sm-block">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="d-inline-block text-success mb-2">Two</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 align-items-start d-none d-sm-block">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="d-inline-block text-warning mb-2">Three</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 align-items-start d-none d-sm-block">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="d-inline-block text-danger mb-2">Four</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 align-items-start d-none d-sm-block">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="d-inline-block text-secondary mb-2">One</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card flex-md-row shadow-sm mb-3 align-items-start d-none d-sm-block">
+                            <div class="card-body d-flex flex-column">
+                                <strong class="d-inline-block text-secondary mb-2">One</strong>
+                                <h3>
+                                    <a href="#" class="text-dark">Хелоу, сантехнік!</a>
+                                </h3>
+                                <p class="card-text mb-auto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit!
+                                </p>
+                                <a href="#">Continue reading</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="links" class="col-md-3">
+                <div class="list-group list-group-flush">
+                    <h4>Корисні посилання</h4>
+                    <a href="#" class="list-group-item list-group-item-action">link1</a>
+                    <a href="#" class="list-group-item list-group-item-action">link2</a>
+                </div>
             </div>
         </div>
     </div>
@@ -44,5 +152,6 @@
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/headMenu.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
