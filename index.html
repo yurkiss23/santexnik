@@ -16,12 +16,16 @@
     <!-- QUICK CALL -->
     <div class="container">
         <div class="row mb-2 justify-content-center">
-            <div class="col-auto">
-                <div class="card shadow-sm mt-3 h-md-550 flex-auto d-block d-sm-none">
+            <div class="col-auto d-block d-sm-none">
+                <div class="card shadow-sm mt-3 h-md-550 flex-auto">
                     <canvas id="canvasTrouble"></canvas>
-                    <button id="shot" class="btn btn-outline-default btn-block">
+                    <button id="btnShot" class="btn btn-outline-default btn-block">
                         <img src="https://www.supplyforce.com/ASSETS/WEB_THEMES//ECOMMERCE_STD_TEMPLATE_V2/images/NoImage.png" alt="" id="shot">
                     </button>
+                </div>
+                <div class="mt-2">
+                    <h3 id="sign">Натисніть і наведіть</h3>
+                    <h3 id="signShot">Натисніть зображення</h3>
                 </div>
             </div>
         </div>
@@ -48,7 +52,7 @@
     <div class="container">
         <div class="row" id="columns">
             <div id="services" class="col-md-9">
-                <div>
+                <div class="d-none d-sm-block">
                     <h2>Послуги</h2>
                 </div>
                 <div class="row mb-2 justify-content-center">
@@ -139,7 +143,7 @@
                 </div>
             </div>
             <div id="links" class="col-md-3">
-                <div class="list-group list-group-flush">
+                <div class="list-group list-group-flush d-none d-sm-block">
                     <h4>Корисні посилання</h4>
                     <a href="#" class="list-group-item list-group-item-action">link1</a>
                     <a href="#" class="list-group-item list-group-item-action">link2</a>
