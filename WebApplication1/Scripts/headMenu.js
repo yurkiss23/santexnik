@@ -1,4 +1,4 @@
 $(function(){
-    $("#head-menu").load("/_headMenu.html");
+    $("#head-menu").load("Content/_headMenu.html");
     $("[data-toggle='tooltip']").tooltip();
 });
