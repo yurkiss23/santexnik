@@ -27,6 +27,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public ViewResult RegArea()
+        {
+            return View();
+        }
+
         //public ActionResult About()
         //{
         //    ViewBag.Message = "Your application description page.";

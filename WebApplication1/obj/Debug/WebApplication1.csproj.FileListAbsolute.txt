@@ -242,7 +242,6 @@ C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.Razor.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.WebPages.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.WebPages.Deployment.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.WebPages.Razor.xml
-C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.Mvc.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\System.Web.Optimization.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\Newtonsoft.Json.xml
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\Antlr3.Runtime.pdb
@@ -252,9 +251,7 @@ C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.Razor.
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
-C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
-C:\Users\yurkiss\source\repos\santexnik\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\obj\Debug\WebApplication1.Migrations._1.resources
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
 C:\Users\yurkiss\source\repos\santexnik\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
