@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="~/Content/style.css">
 </head>
 <body>
-    <div id="head-menu"></div>
+    <div id="head-menu">@Html.Partial("~/Views/Shared/_headMenu.cshtml")</div>
 
     <!-- QUICK CALL -->
     <div class="container">
@@ -156,7 +156,7 @@
     <script src="~/Scripts/jquery-3.4.1.js"></script>
     <script src="~/Scripts/popper.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/headMenu.js"></script>
+    @*<script src="~/Scripts/headMenu.js"></script>*@
     <script src="~/Scripts/index.js"></script>
 </body>
 </html>

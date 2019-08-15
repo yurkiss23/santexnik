@@ -1,4 +1,4 @@
 $(function(){
-    $("#head-menu").load("Content/_headMenu.html");
+    $("#head-menu").load("~/Views/Shared/_headMenu.cshtml");
     $("[data-toggle='tooltip']").tooltip();
 });
