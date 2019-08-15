@@ -25,18 +25,45 @@
                 </li>
             </ul>
 
-            <form action="" class="form-inline">
+          
                 <div class="form-group m-1">
-                    <label for="login" class="sr-only">Логін</label>
-                    <input type="text" id="login" class="form-control" placeholder="login" data-toggle="tooltip" title="логін">
+                    <label for="login" class="sr-only">E-mail</label>
+                    <input type="text" id="Email" class="form-control" placeholder="login" data-toggle="tooltip" title="логін">
                 </div>
                 <div class="form-group m-1">
                     <label for="pass" class="sr-only">Пароль</label>
-                    <input type="password" id="pass" class="form-control" placeholder="password" data-toggle="ttoltip" title="пароль">
+                    <input type="password" id="Pass" class="form-control" placeholder="password" data-toggle="ttoltip" title="пароль">
                 </div>
-                <a type="submit" class="btn btn-light" href="PersonalArea.html" title="увійти">Увійти</a>
+                <button type="submit" class="btn btn-light" onclick="signIn()" title="увійти">Увійти</button>
                 <button type="submit" class="btn btn-light ml-1" title="Реєстрація">@Html.ActionLink("Реєстрація", "RegArea")</button>
-            </form>
+      
         </div>
     </div>
+
 </div>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script>
+    function signIn() {
+                if (document.getElementById("Email").value && document.getElementById("Pass").value)
+                {
+                    $.get("/Home/SignIn", {
+                        "Email": document.getElementById("Email").value,
+                        "Password": document.getElementById("Pass").value,
+                    },
+                     function (data) {
+                         if(data==null)
+                             document.getElementById("Email").style.border = "blue solid 2px";
+                     });
+
+                }
+                else
+                {
+                    if(document.getElementById("Email").value==="")
+                        document.getElementById("Email").style.border ="red solid 2px";
+                    if(document.getElementById("Pass").value==="")
+                        document.getElementById("Pass").style.border ="red solid 2px";
+                }
+
+            }
+</script>
+

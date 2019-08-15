@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
@@ -19,7 +20,19 @@ namespace WebApplication1.Controllers
             _context.SaveChanges();
         }
 
-
+        [HttpGet]
+        public ActionResult SignIn(string Email, string Password)
+        {
+           
+           var res= _context.Users.FirstOrDefault((x)=> x.Email==Email&&x.Password==Password);
+            if (res != null)
+            {
+                ViewBag.obj = res;
+                return View();
+            }
+            else
+                return null;
+        }
 
         public ViewResult Index()
         {
