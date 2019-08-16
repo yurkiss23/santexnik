@@ -99,7 +99,7 @@
         <p>Уже зареєстровані? <a href="@Url.Action("Index", "Home")">Увійти</a></p>
     </div>
 
-    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     <script>
             function GetAndSendData() {
                 if (document.getElementById("email").value && document.getElementById("psw").value && document.getElementById("nm").value && document.getElementById("phn").value && document.getElementById("adr").value)
@@ -111,7 +111,7 @@
                         "Phone": document.getElementById("phn").value,
                         "Address": document.getElementById("adr").value
                     });
-                 //   window.location.href="/index.html"
+                    window.location.href = "/Home/Index";
                 }
                 else
                 {

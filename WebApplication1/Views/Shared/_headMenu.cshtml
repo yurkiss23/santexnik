@@ -51,8 +51,9 @@
                         "Password": document.getElementById("Pass").value,
                     },
                      function (data) {
-                         if(data==null)
-                             document.getElementById("Email").style.border = "blue solid 2px";
+                         if (data == null)
+                             window.location.href = data;
+                           //  document.getElementById("Email").style.border = "blue solid 2px";
                      });
 
                 }
