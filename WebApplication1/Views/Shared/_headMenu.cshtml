@@ -34,7 +34,7 @@
                     <label for="pass" class="sr-only">Пароль</label>
                     <input type="password" id="Pass" class="form-control" placeholder="password" data-toggle="ttoltip" title="пароль">
                 </div>
-                <button type="submit" class="btn btn-light" onclick="signIn()" title="увійти">Увійти</button>
+                <button type="submit" class="btn btn-light" id="signin" title="увійти">Увійти</button>
                 <button type="submit" class="btn btn-light ml-1" title="Реєстрація">@Html.ActionLink("Реєстрація", "RegArea")</button>
       
         </div>
@@ -43,18 +43,22 @@
 </div>
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 <script>
-    function signIn() {
+    document.getElementById("signin").onclick= function () {
                 if (document.getElementById("Email").value && document.getElementById("Pass").value)
                 {
-                    $.get("/Home/SignIn", {
-                        "Email": document.getElementById("Email").value,
-                        "Password": document.getElementById("Pass").value,
-                    },
-                     function (data) {
-                         if (data == null)
-                             window.location.href = data;
-                           //  document.getElementById("Email").style.border = "blue solid 2px";
-                     });
+                    //$.get("/Home/SignIn", {
+                    //    "Email": document.getElementById("Email").value,
+                    //    "Password": document.getElementById("Pass").value,
+                    //},
+                    // function (data) {
+                    //     if (data == "null")
+                    //         window.location.reload();
+                    //     else
+                    //         window.location.href = data;
+                         
+                    // });
+
+                    window.location.href = "/Home/Kabinet?Email=" + document.getElementById("Email").value + "&Password=" + document.getElementById("Email").value;
 
                 }
                 else
