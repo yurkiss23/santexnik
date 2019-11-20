@@ -7,6 +7,11 @@ namespace WebApplication1.Models
 {
     public class EFContext : DbContext
     {
-       public DbSet<User> Users { get; set; }
+        public EFContext() : base("defaultStr")
+        {
+
+        }
+
+        public DbSet<User> Users { get; set; }
     }
 }

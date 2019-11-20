@@ -18,6 +18,21 @@ namespace WebApplication1.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+            context.Users.AddOrUpdate(u => u.Id, new Models.User
+            {
+                Id = 1,
+                Name = "q",
+                Email = "q@q.com",
+                Password = "1"
+            });
+            context.Users.AddOrUpdate(u => u.Id, new Models.User
+            {
+                Id = 1,
+                Name = "q",
+                Email = "q@q.com",
+                Password = "1"
+            });
         }
     }
 }
