@@ -8,16 +8,15 @@ namespace WebApplication1.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Users",
+                "dbo.san_Users",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Email = c.String(),
-                        Password = c.String(),
-                        Phone = c.String(),
-                        Address = c.String(),
-                        DoneServices = c.Int(nullable: false),
+                        Name = c.String(nullable: false, maxLength: 256),
+                        Email = c.String(nullable: false, maxLength: 256),
+                        Password = c.String(nullable: false, maxLength: 256),
+                        Phone = c.String(maxLength: 256),
+                        Address = c.String(maxLength: 256),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -25,7 +24,7 @@ namespace WebApplication1.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.Users");
+            DropTable("dbo.san_Users");
         }
     }
 }

@@ -224,12 +224,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Entities\Users.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911192310475_add base.cs" />
-    <Compile Include="Migrations\201911192310475_add base.Designer.cs">
-      <DependentUpon>201911192310475_add base.cs</DependentUpon>
+    <Compile Include="Migrations\201911211538169_add base.cs" />
+    <Compile Include="Migrations\201911211538169_add base.Designer.cs">
+      <DependentUpon>201911211538169_add base.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EFContext.cs" />
@@ -325,8 +326,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911192310475_add base.resx">
-      <DependentUpon>201911192310475_add base.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911211538169_add base.resx">
+      <DependentUpon>201911211538169_add base.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
