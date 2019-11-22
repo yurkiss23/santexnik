@@ -696,3 +696,4 @@ C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplicat
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\Администратор\source\repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.Migrations.addbase.resources
 C:\Users\Администратор\source\repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+D:\itstep\HW\курсач\asp_net\new\santexnik\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

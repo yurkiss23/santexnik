@@ -52,40 +52,13 @@
             if (res == "null")
                 window.location.reload();
             else
-                window.location.href = res;
-            //window.location.href = "/Home/Kabinet?Email=" + $("Email").val() + "&Password=" + $("Email").val();
+                window.location.href = "/Home/Kabinet?Email=" + document.getElementById("Email").value + "&Password=" + document.getElementById("Pass").value;
         }
         else {
-            alert("qwe");
+            if ($("#Email").val() === "")
+                document.getElementById("Email").style.border = "red solid 2px";
+            if ($("#Pass").val() === "")
+                document.getElementById("Pass").style.border = "red solid 2px";
         }
     }
-    //function (data) {
-    //    if (data == "null")
-    //        window.location.reload();
-    //    else
-    //        window.location.href = data;
-    //});
-    //$("#form1").submit(function () {
-    //    if (document.getElementById("Email").value && document.getElementById("Pass").value) {
-    //        $.get("/Home/SignIn", {
-    //            "Email": document.getElementById("Email").value,
-    //            "Password": document.getElementById("Pass").value,
-    //        },
-    //        $('#form1').serialize()).success(
-    //        function (data) {
-    //            if (data == "null")
-    //                window.location.reload();
-    //            else
-    //                window.location.href = data;
-
-    //        });
-    //        window.location.href = "/Home/Kabinet?Email=" + document.getElementById("Email").value + "&Password=" + document.getElementById("Email").value;
-    //    }
-    //    else {
-    //        if (document.getElementById("Email").value === "")
-    //            document.getElementById("Email").style.border = "red solid 2px";
-    //        if (document.getElementById("Pass").value === "")
-    //            document.getElementById("Pass").style.border = "red solid 2px";
-    //    }
-    //});
 </script>
