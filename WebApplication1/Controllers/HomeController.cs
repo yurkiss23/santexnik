@@ -20,7 +20,28 @@ namespace WebApplication1.Controllers
             _context.SaveChanges();
         }
 
+        [HttpGet]
+        public ActionResult SignIn(string Email, string Password)
+        {
 
+            var res = _context.Users.FirstOrDefault((x) => x.Email == Email && x.Password == Password);
+            if (res != null)
+                return Json(Url.Action("Index", "Kabinet", new { id = res.Id }));
+            else
+                return null;
+        }
+
+        public ViewResult Kabinet(string Email, string Password)
+        {
+
+            var res = _context.Users.FirstOrDefault((x) => x.Email == Email && x.Password == Password);
+            if (res != null)
+            {
+                ViewBag.obj = res;
+                return View();
+            }
+            else return null;
+        }
 
         public ViewResult Index()
         {

@@ -306,6 +306,8 @@
     <Content Include="Content\_headMenu.html" />
     <Content Include="Views\Home\RegArea.cshtml" />
     <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\Unavailable.cshtml" />
+    <Content Include="Views\Home\Kabinet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
