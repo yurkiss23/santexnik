@@ -26,7 +26,7 @@ namespace WebApplication1.Controllers
 
             var res = _context.Users.FirstOrDefault((x) => x.Email == Email && x.Password == Password);
             if (res != null)
-                return Json(Url.Action("Index", "Kabinet", new { id = res.Id }));
+                return Json(Url.Action("Kabinet", "Home", new { id = res.Id }));
             else
                 return null;
         }

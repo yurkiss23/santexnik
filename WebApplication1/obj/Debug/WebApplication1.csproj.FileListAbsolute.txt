@@ -690,7 +690,6 @@ C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplicat
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
-C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\Администратор\Source\Repos\yurkiss23\santexnik\WebApplication1\obj\Debug\WebApplication1.dll

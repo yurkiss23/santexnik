@@ -25,45 +25,67 @@
                 </li>
             </ul>
 
-            <form action="" class="form-inline">
+            <form id="form1" action="" class="form-inline">
                 <div class="form-group m-1">
                     <label for="Email" class="sr-only">Логін</label>
                     <input type="text" id="Email" class="form-control" placeholder="Email" data-toggle="tooltip" title="Email">
                 </div>
                 <div class="form-group m-1">
                     <label for="Pass" class="sr-only">Пароль</label>
-                    <input type="password" id="Pass" class="form-control" placeholder="password" data-toggle="ttoltip" title="пароль">
+                    <input type="password" id="Pass" class="form-control" placeholder="password" data-toggle="tooltip" title="пароль">
                 </div>
-                <button type="submit" class="btn btn-light" id="signin" title="увійти">Увійти</button>
-                <button type="submit" class="btn btn-light ml-1" title="Реєстрація">@Html.ActionLink("Реєстрація", "RegArea")</button>
+                <button type="button" class="btn btn-light" onclick="signIn()" id="signin" title="увійти">Увійти</button>
             </form>
+                <button type="submit" class="btn btn-light ml-1" title="Реєстрація">@Html.ActionLink("Реєстрація", "RegArea")</button>
         </div>
     </div>
 </div>
 <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 <script>
-    document.getElementById("signin").onclick= function () {
-                if (document.getElementById("Email").value && document.getElementById("Pass").value)
-                {
-                    $.get("/Home/SignIn", {
-                        "Email": document.getElementById("Email").value,
-                        "Password": document.getElementById("Pass").value,
-                    },
-                     function (data) {
-                         if (data == "null")
-                             window.location.reload();
-                         else
-                             window.location.href = data;
+    function signIn() {
+        if ($('#Email').val() && $('#Pass').val()) {
+            var res = $.get("/Home/SignIn", {
+                "Email": $('#Email').val(),
+                "Password": $('#Pass').val()
+            });
 
-                     });
-                    window.location.href = "/Home/Kabinet?Email=" + document.getElementById("Email").value + "&Password=" + document.getElementById("Email").value;
-                }
-                else
-                {
-                    if(document.getElementById("Email").value==="")
-                        document.getElementById("Email").style.border ="red solid 2px";
-                    if(document.getElementById("Pass").value==="")
-                        document.getElementById("Pass").style.border ="red solid 2px";
-                }
-            }
+            if (res == "null")
+                window.location.reload();
+            else
+                window.location.href = res;
+            //window.location.href = "/Home/Kabinet?Email=" + $("Email").val() + "&Password=" + $("Email").val();
+        }
+        else {
+            alert("qwe");
+        }
+    }
+    //function (data) {
+    //    if (data == "null")
+    //        window.location.reload();
+    //    else
+    //        window.location.href = data;
+    //});
+    //$("#form1").submit(function () {
+    //    if (document.getElementById("Email").value && document.getElementById("Pass").value) {
+    //        $.get("/Home/SignIn", {
+    //            "Email": document.getElementById("Email").value,
+    //            "Password": document.getElementById("Pass").value,
+    //        },
+    //        $('#form1').serialize()).success(
+    //        function (data) {
+    //            if (data == "null")
+    //                window.location.reload();
+    //            else
+    //                window.location.href = data;
+
+    //        });
+    //        window.location.href = "/Home/Kabinet?Email=" + document.getElementById("Email").value + "&Password=" + document.getElementById("Email").value;
+    //    }
+    //    else {
+    //        if (document.getElementById("Email").value === "")
+    //            document.getElementById("Email").style.border = "red solid 2px";
+    //        if (document.getElementById("Pass").value === "")
+    //            document.getElementById("Pass").style.border = "red solid 2px";
+    //    }
+    //});
 </script>
